@@ -1,0 +1,28 @@
+@mixin for-about-top-btns {
+  font-family: Oswald;
+  font-size: $fz30-16;
+  line-height: 75px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #1c1c1b;
+}
+
+@mixin for-about-title {
+  font-family: Oswald;
+  font-size: $fz24-14;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000000;
+}
+
+@mixin for-about-text {
+  font-family: Oswald;
+  font-size: $fz18-13;
+  line-height: 40px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: #6e774a;
+}

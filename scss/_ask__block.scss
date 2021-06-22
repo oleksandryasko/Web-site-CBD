@@ -1,0 +1,56 @@
+@import "_mixin__ask__block.scss";
+
+.ask-question {
+  padding-bottom: calc(40px + (150 - 40) * ((100vw - 320px) / 1640));
+  padding-left: calc(20px + (450 - 50) * ((100vw - 320px) / 1640));
+  padding-right: calc(10px + (473 - 20) * ((100vw - 320px) / 1640));
+  @media (min-width: 2100px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.ask {
+  &__block {
+    width: 70%;
+    margin: 0 auto;
+    @media (max-width: 850px) {
+      width: 100%;
+    }
+  }
+  &__text {
+    @include for-ask-text;
+    cursor: pointer;
+    border-top: 1px solid #eaedde;
+    border-bottom: 1px solid #eaedde;
+    @media (max-width: 581px) {
+      line-height: 35px;
+      padding: 20px 0;
+    }
+  }
+}
+.title {
+  &__section {
+    &--marg {
+      margin-bottom: 30px;
+      text-align: center;
+      line-height: calc(28px + (75 - 28) * ((100vw - 320px) / 1640));
+    }
+  }
+}
+.fa-plus {
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.hide__text {
+  font-family: Oswald;
+  font-size: $fz18-14;
+  text-align: justify;
+  line-height: calc(28px + (40 - 28) * ((100vw - 320px) / 1640));
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: #000000;
+  display: none;
+}
+.fa-plus__rotade {
+  transform: rotate(45deg);
+}

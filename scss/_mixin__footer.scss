@@ -1,0 +1,38 @@
+@mixin for-footer-logo {
+  font-family: Oswald;
+  font-size: calc(30px + (60 - 30) * ((100vw - 320px) / 1640));
+  line-height: 55px;
+  font-weight: 400;
+  color: #6e774a;
+  text-transform: uppercase;
+}
+
+@mixin for-footer-text {
+  font-family: Oswald;
+  font-size: $fz60;
+  line-height: calc(38px + (40 - 38) * ((100vw - 320px) / 1640));
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: #6e774a;
+}
+
+@mixin for-footer-title {
+  font-family: Oswald;
+  font-size: $fz14;
+  line-height: 75px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #1c1c1b;
+}
+
+@mixin for-footer-copyright {
+  font-family: Oswald;
+  font-size: 11px;
+  line-height: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: #6e774a;
+}

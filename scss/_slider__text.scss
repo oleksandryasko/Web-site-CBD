@@ -1,0 +1,121 @@
+.slider-text {
+  &__section {
+    background: linear-gradient(
+        to left bottom,
+        rgba(45, 51, 37, 0.79),
+        rgba(36, 70, 44, 0.178)
+      ),
+      url(../img/slider-text__background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: $Slick-textPT;
+    padding-bottom: $Slick-textPB;
+    position: relative;
+  }
+  &__block {
+    position: relative;
+  }
+  &__reatings {
+    margin-bottom: 40px;
+    color: #aab384;
+  }
+  &__info {
+    outline: none;
+    border: none;
+  }
+  &__wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__text {
+    font-family: Oswald;
+    font-size: $fz22;
+    line-height: 40px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    @media (max-width: 600px) {
+      line-height: 30px;
+      padding: 0 5px;
+    }
+    @media (max-width: 815px) {
+      padding: 0 15px;
+    }
+    @media (min-width: 2100px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  &__autor {
+    span {
+      font-family: Oswald;
+      font-size: $fz24;
+      line-height: 75px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #ffffff;
+      display: inline;
+      position: relative;
+      @media (min-width: 2100px) {
+        font-size: 30px;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        width: 47px;
+        height: 2px;
+        background-color: white;
+        left: -62%;
+        @media (max-width: 1000px) {
+          left: -68px;
+        }
+      }
+    }
+  }
+}
+
+.slider-text__block .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  background: url(../img/svg/arrows-slider__text.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+  border: 1px solid white;
+  padding: $Slick-arrow;
+  z-index: 30;
+}
+.slider-text__block .slick-prev {
+  transform: rotate(180deg);
+}
+.slider-text__block .slick-next {
+  top: 0;
+  right: 0;
+}
+
+.text--position {
+  font-family: Oswald;
+  display: inline;
+  font-size: $fz24-12;
+  line-height: 60px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: #f7f8f3;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 135px;
+  @media (max-width: 1138px) {
+    left: -55px;
+    bottom: 50px;
+    opacity: 0.8;
+  }
+  @media (max-width: 663px) {
+    display: none;
+  }
+}
