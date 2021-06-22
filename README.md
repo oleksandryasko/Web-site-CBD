@@ -1,9 +1,9 @@
 # CBD web site
 
-![](ScreenShots/one.png);
-![](ScreenShots/two.png);
-![](ScreenShots/three.png);
-![](ScreenShots/four.png);
+![](Screenshots/one.png);
+![](Screenshots/two.png);
+![](Screenshots/three.png);
+![](Screenshots/four.png);
 
 ## Built With:
 
